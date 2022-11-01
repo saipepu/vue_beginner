@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.male {
+  border-radius: 100%;
+  border: 5px solid darkblue;
+}
+.female {
+  border-radius: 100%;
+  border: 5px solid pink;
+}
+button.male {
+  border-radius: 0;
+  background: darkblue;
+  color: white;
+  padding: 5px;
+}
+button.female {
+  border-radius: 0;
+  background: pink;
+  color: white;
+  padding: 5px; 
+}
