@@ -1,15 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderVue title="Todo App Vue Js" @toggle-form="ToggleForm"/>
+  <router-view :toggleForm="showForm">
+
+  </router-view>
+  <Footer />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import HeaderVue from './components/HeaderVue';
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderVue,
+    Footer
+  },
+  data() {
+    return {
+      showForm: false
+    }
+  },
+  methods: {
+    ToggleForm() {
+      console.log(this.showForm)
+      this.showForm = !this.showForm
+    },
   }
 }
 </script>
@@ -22,5 +39,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
