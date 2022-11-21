@@ -2,7 +2,7 @@
   "name": "vue_js_beginner",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://saipepu.github.io/vue_beginner/",
+  "homepage": "https://saipepu.github.io/vue_beginner",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
